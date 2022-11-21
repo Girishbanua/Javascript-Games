@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="form">
+                <form>
+                    <fieldset>
+                        <legend><h2>Number Guessing Game</h2></legend>                           
+                        <ul>
+                            <li>We have selected a random number between 1 and 100.</li>
+                            <li>See if you can guess it in 10 turns or less. </li>
+                            <li>We'll tell you  if your guess was too high or too low.</li>
+                        </ul>               
+                        <label for="userInput">Enter a guess: </label>
+                        <input type="number" id="userInput" min="1" max="100" required class="guessField">            
+                        <input type="submit" class="guessSubmit" value="Submit guess">
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="resultParas">
+                <p class="guesses"></p>
+                <p class="guessesLeft"></p>
+                <p class="lastResult"></p>
+                <p class="lowOrHigh"></p>
+            </div>            
+        </div>
+    </main>
+    <footer>
+        <p>Coded by: <a href="https://github.com/Girishbanua" target="_blank">Girish Ch. Banua</a></p>
+        <p>Reference Code: <a href="https://developer.mozilla.org/en-US/" target="_blank">mdn Web docs</a></p>
+    </footer>
+</body>
+<script src="javascript.js">    
+</script>
+</html>
